@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIT Madras CGPA Calculator</title>
+</head>
+<body>
+    <h1>IIT Madras CGPA Calculator</h1>
+    <form id="courseForm">
+        <label for="numCourses">Enter Number of gradable courses in current semester:</label>
+        <input type="number" id="numCourses" name="numCourses" min="1" required>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="courseInputs"></div>
+    <button id="calculateButton" style="display: none;">Calculate CGPA</button>
+    <div id="cgpaResult"></div>
+
+    <script src="Task1_details.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
