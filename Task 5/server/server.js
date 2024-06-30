@@ -9,6 +9,7 @@ const upload = multer({ dest: "uploads/" });
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use("/uploads", express.static("uploads"));
 app.use("/products", upload.array("photos"), productRoutes);
 
 app.post("/products", upload.array("photos"), (req, res) => {
