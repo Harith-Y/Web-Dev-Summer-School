@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ethers } from "ethers";
-import GradeBookABI from "./GradeBookABI.json"; // Paste your ABI JSON here
+import GradeBookABI from "./GradeBookABI.json";
 
 const GradeBook = () => {
   const [provider, setProvider] = useState(null);
@@ -12,7 +12,7 @@ const GradeBook = () => {
   const [grade, setGrade] = useState(0);
   const [average, setAverage] = useState(null);
 
-  const contractAddress = "0xd9145CCE52D386f254917e481eB44e9943F39138";
+  const contractAddress = "0x938A836Ada3b1d83c5977F6E04A50624E504b570";
 
   const connectWallet = async () => {
     if (window.ethereum) {
